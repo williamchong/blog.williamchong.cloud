@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "魔術！乜叉嘢都支援 PROXY protocol！"
+description: "使用 Docker networking + HAProxy，讓任何 TCP network service 都支援 PROXY protocol"
 date: 2017-09-28 00:00:00 +0800
 categories: cantonese
 locale: zh_HK

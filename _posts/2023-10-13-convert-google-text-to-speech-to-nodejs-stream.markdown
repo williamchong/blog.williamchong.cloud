@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Convert Google text to speech API result to HTTP streamed response"
+description: "Learn how to convert the Google Cloud Text-to-Speech API result to an HTTP streamed response in Node.js. This guide covers the usage of the PassThrough class, setHeader, and sendStream."
 date:   2023-10-13 10:02:00 +0800
 categories: code
 image: /assets/images/2023-10-13-convert-google-text-to-speech-to-nodejs-stream/cover.png

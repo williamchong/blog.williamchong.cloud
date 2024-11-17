@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Convert Azure text to speech API result to HTTP streamed response"
+description: "Learn how to convert the Azure Text-to-Speech API result to an HTTP streamed response in Node.js. This guide covers the usage of the fromStreamOutput function, PushAudioOutputStream, PassThrough, and speakTextAsync."
 date:   2023-10-15 02:40:00 +0800
 categories: code
 image: /assets/images/2023-10-15-convert-azure-text-to-speech-to-nodejs-stream/azure.png

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How to workaround “Import failed” error in Medium with debugger"
+description: "Learn how to workaround the “Import failed” error in Medium by using the debugger to backdate your stories. This guide covers the Medium import tool, debugging the import error, and hacking the postHTML value in the debugger."
 date: 2023-05-16 00:00:00 +0800
 categories: debug
 image: /assets/images/2023-05-16-workaround-import-failed-in-medium/1.png

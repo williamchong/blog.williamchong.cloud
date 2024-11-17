@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Concatenating ogg vorbis (.ogg) audio files on frontend"
+description: "Learn how to concatenate OGG audio files on the frontend using JavaScript. This guide covers splitting text into sections, concatenating OGG files, and using FFmpeg in the browser."
 date: 2024-01-02 02:00:00 +0800
 categories: code
 image: /assets/images/2024-01-02-concatenating-ogg-files-on-browser/cover.png

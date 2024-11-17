@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Android NDK project 用 Circleci 2.0 自動出 build"
+description: "Automated build of Android NDK native app in CircleCI 2.0"
 date: 2017-05-31 00:00:00 +0800
 categories: cantonese
 image: /assets/images/2017-05-31-ndk-android-circleci-build/1.png
