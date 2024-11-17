@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+description: William Chong's blog for sharing small technical tips and tricks, as well as random rants.
 image: /assets/images/about/about.png
 permalink: /about/
 ---

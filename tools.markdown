@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tools
+description: Random technical useful tools that I wrote
 permalink: /tools/
 ---
 
