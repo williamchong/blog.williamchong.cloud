@@ -3,6 +3,7 @@ layout: post
 title: "魔術！乜叉嘢都支援 PROXY protocol！"
 date: 2017-09-28 00:00:00 +0800
 categories: cantonese
+locale: zh_HK
 image: /assets/images/2017-09-28-proxy-protocol-for-everything/1.png
 tags: docker haproxy devop proxy
 ---
