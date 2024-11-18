@@ -4,8 +4,11 @@ title: "Integrating Vertex AI Search for Retail Part 1: Importing GA4 Data"
 description: "Learn how to import historical data into Google Cloud's Vertex AI Search for Retail. This guide covers importing product catalogs using API and user events from Google Analytics(GA4) via BigQuery."
 date: 2024-11-16 16:00:00 +0800
 categories: code
+image: /assets/images/2024-11-16-vertex-ai-search-retail-1-importing-data/cover.png
 tags: google cloud data ai ga4 bigquery
 ---
+
+![Google Cloud Vertex AI Search for Retail](/assets/images/2024-11-16-vertex-ai-search-retail-1-importing-data/cover.png)
 
 ## Background
 
