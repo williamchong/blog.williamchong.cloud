@@ -9,3 +9,4 @@ Random tools I wrote
 ===
 
 - [CBOR to JSON Converter](https://cbor.williamchong.cloud)
+- [Bech32 Wallet Address Converter](https://bech32.williamchong.cloud)
