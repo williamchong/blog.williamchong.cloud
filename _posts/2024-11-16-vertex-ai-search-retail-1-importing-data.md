@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Integrating Vertex AI Search for Retail Part 1: Importing GA4 Data"
-description: "Learn how to import historical data into Google Cloud's Vertex AI Search for Retail. This guide covers importing product catalogs using API and user events from Google Analytics(GA4) via BigQuery."
+title: "Integrating Vertex AI Search for commerce Part 1: Importing GA4 Data"
+description: "Learn how to import historical data into Google Cloud's Vertex AI Search for Commerce. This guide covers importing product catalogs using API and user events from Google Analytics(GA4) via BigQuery."
 date: 2024-11-16 16:00:00 +0800
 categories: code
 image: /assets/images/2024-11-16-vertex-ai-search-retail-1-importing-data/cover.png
 tags: google cloud data ai ga4 bigquery
 ---
 
-![Google Cloud Vertex AI Search for Retail](/assets/images/2024-11-16-vertex-ai-search-retail-1-importing-data/cover.png)
+![Google Cloud Vertex AI Search for Commerce](/assets/images/2024-11-16-vertex-ai-search-retail-1-importing-data/cover.png)
 
 ## Background
 
@@ -16,7 +16,7 @@ In one of our e-commerce project, a very useful feature we always wanted to have
 
 We looked into [Amazon Personalize](https://aws.amazon.com/personalize/), which seems easy and promising, but unfortunately, we didn't have time to set up a new data pipeline just for it, and couldn't even try the setting up models.
 
-Recently, I came across Google Cloud's [Vertex AI Search for Retail](https://cloud.google.com/solutions/retail-product-discovery), which seems to have seamless integration with [Google Merchant Center](https://www.google.com/retail/) and [Google Analytics](https://marketingplatform.google.com/about/analytics/)(GA4). This lowers integration costs, so I decided to give it a try. Turns out, it is not that easy.
+Recently, I came across Google Cloud's [Vertex AI Search for Commerce](https://cloud.google.com/solutions/retail-product-discovery), which seems to have seamless integration with [Google Merchant Center](https://www.google.com/retail/) and [Google Analytics](https://marketingplatform.google.com/about/analytics/)(GA4). This lowers integration costs, so I decided to give it a try. Turns out, it is not that easy.
 
 ## Importing Historical Data
 
@@ -163,4 +163,4 @@ After the serving config is created, we can go to the "Evaluate" tab to test the
 
 ## Conclusion
 
-Since my historical GA4 events do not meet the model requirement, I could not try the recommendation models that I am interested in. To improve the data quality, I will be implementing methods to [collect real-time user data](https://cloud.google.com/retail/docs/record-events). In the next post, we will cover how to collect real-time user data for Retail AI.
+Since my historical GA4 events do not meet the model requirement, I could not try the recommendation models that I am interested in. To improve the data quality, I will be implementing methods to [collect real-time user data](https://cloud.google.com/retail/docs/record-events). In the next post, we will cover how to collect real-time user data.
