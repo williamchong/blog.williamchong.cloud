@@ -163,4 +163,4 @@ After the serving config is created, we can go to the "Evaluate" tab to test the
 
 ## Conclusion
 
-Since my historical GA4 events do not meet the model requirement, I could not try the recommendation models that I am interested in. To improve the data quality, I will be implementing methods to [collect real-time user data](https://cloud.google.com/retail/docs/record-events). In the next post, we will cover how to collect real-time user data.
+Since my historical GA4 events do not meet the model requirement, I could not try the recommendation models that I am interested in. To improve the data quality, I will be implementing methods to [collect real-time user data](https://cloud.google.com/retail/docs/record-events). In the [next post]({% post_url 2025-02-02-vertex-ai-search-retail-2-collecting-real-time-events %}), we will cover how to collect real-time user data.
