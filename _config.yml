@@ -30,7 +30,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: blog.williamchong.cloud
 url: "https://blog.williamchong.cloud" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  williamchong
+github_username: williamchong
+threads_username: wlchhk
 twitter:
   username: williamchong007
   card: summary

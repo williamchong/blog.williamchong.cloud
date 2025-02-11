@@ -7,6 +7,9 @@
   <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}" as="script">
   {%- endif -%}
   <link rel="preload" href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5384552213891537" as="script">
+  {%- if site.threads_username -%}
+  <link rel="me" href="https://www.threads.net/@{{ site.threads_username }}">
+  {%- endif -%}
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
