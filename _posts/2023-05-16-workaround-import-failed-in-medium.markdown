@@ -13,6 +13,9 @@ Originally [posted in LikeCoin medium publication](https://medium.com/likecoin/h
 
 ---
 
+## tldr: If you just want a Medium Story Backdating tool
+If you just want to control the publish date of your story, use my new [Medium Backdating Tool](https://medium-backdate.williamchong.cloud).
+
 ## Import story tool
 
 Medium has a powerful feature that allows you to import websites you own into stories. All you need to do is to provide an URL then press Import. [Check it out if you haven’t tried it before](https://medium.com/p/import).
