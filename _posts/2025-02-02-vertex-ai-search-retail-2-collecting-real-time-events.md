@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Integrating Vertex AI Search for Commerce Part 2: Collecting Realtime Data"
-description: ""
+description: "Learn how to integrate real-time user event collection for Google Vertex AI Search for Commerce, with a deep dive into the challenges of implementing the JavaScript Pixel tracking method"
 date: 2025-02-02 04:00:00 +0800
 categories: code
 image: /assets/images/2025-02-02-vertex-ai-search-retail-2-collecting-real-time-events/0.png

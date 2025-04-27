@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fix Google Analytics (GA4) Events Not Firing in iFrame"
-description: ""
+description: "A technical analysis of why Google Analytics (GA4) events fail to trigger in iframes, and how to fix it with proper SameSite cookie settings"
 date: 2025-02-19 23:00:00 +0800
 categories: code
 image: /assets/images/2025-02-19-fix-ga-events-in-iframe/0.png
