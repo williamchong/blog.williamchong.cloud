@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Modifying `NewSingleHostReverseProxy` Response Data in Go without HTTP Errors"
-description: "Learn how to modify the response data of a `NewSingleHostReverseProxy` in Go without encountering HTTP errors. This guide covers the built-in `ModifyResponse` method, middleware approach, and how to fix the `Content-Length` header issue."
+description: "A comprehensive guide to intercepting and modifying JSON responses in Go reverse proxies, covering built-in ModifyResponse methods and custom Gin middleware approaches, with practical solutions for the Content-Length header issues that cause HTTP transfer errors."
 date: 2024-10-13 04:00:00 +0800
 categories: code
 image: /assets/images/2024-10-13-modifying-json-response-in-go/cover.png
-tags: golang go proxy json http gin
+tags: golang go reverse-proxy http json-manipulation middleware gin content-length http2 response-modification web-development api-gateway data-transformation
 ---
 
 ![Modifying JSON response in Go](/assets/images/2024-10-13-modifying-json-response-in-go/cover.png)

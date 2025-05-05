@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Concatenating ogg vorbis (.ogg) audio files on frontend"
-description: "Learn how to concatenate OGG audio files on the frontend using JavaScript. This guide covers splitting text into sections, concatenating OGG files, and using FFmpeg in the browser."
+description: "A technical deep dive into browser-based OGG audio file concatenation using JavaScript, exploring multiple approaches from simple Blob merging to Web Audio API techniques, with a final solution leveraging FFmpeg.wasm for professional-quality results."
 date: 2024-01-02 02:00:00 +0800
 categories: code
 image: /assets/images/2024-01-02-concatenating-ogg-files-on-browser/cover.png
-tags: javascript frontend ogg audio ffmpeg
+tags: javascript frontend audio-processing ogg-vorbis ffmpeg wasm webassembly blob-api web-audio-api mediastream text-to-speech browser-compatibility azure
 ---
 
 ![](/assets/images/2024-01-02-concatenating-ogg-files-on-browser/cover.png)

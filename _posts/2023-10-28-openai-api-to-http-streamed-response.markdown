@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Convert OpenAI API stream to HTTP streamed response"
-description: "Learn how to stream ChatGPT responses word by word using HTTP streamed (chunked) responses. This guide covers the OpenAI API, ChatGPT, HTTP streamed response, Node.js, and frontend streaming."
+description: "A comprehensive guide to implementing real-time streaming of ChatGPT responses using HTTP chunked transfer encoding. Learn how to transform OpenAI's streaming API into browser-compatible streams with code examples for both Node.js backend and JavaScript frontend implementations."
 date: 2023-10-28 04:00:00 +0800
 categories: code
 image: /assets/images/2023-10-28-openai-api-to-http-streamed-response/poe.png
-tags: javascript nodejs openai chatgpt
+tags: javascript nodejs openai chatgpt stream http-chunked api-integration transform-stream readablestream text-decoder browser-compatibility nginx http-proxy server-sent-events infrastructure
 ---
 
 ![Asking the AI how to stream its API](/assets/images/2023-10-28-openai-api-to-http-streamed-response/poe.png)

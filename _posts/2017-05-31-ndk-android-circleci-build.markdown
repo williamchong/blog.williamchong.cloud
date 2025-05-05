@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Android NDK project 用 Circleci 2.0 自動出 build"
-description: "Automated build of Android NDK native app in CircleCI 2.0"
+description: "詳細指南介紹如何使用 CircleCI 2.0 為 Android NDK 原生應用程式實現自動化構建，包括 Docker 基礎映像配置、自定義工具鏈以及快速高效的構建流程設定。"
 date: 2017-05-31 00:00:00 +0800
 locale: zh_HK
 categories: cantonese
 image: /assets/images/2017-05-31-ndk-android-circleci-build/1.png
-tags: android ndk devop circleci
+tags: android ndk devops circleci docker ci-cd 自動化構建 持續集成 工具鏈 原生應用 gradle
 ---
 
 Automated build of Android NDK native app in CircleCI 2.0

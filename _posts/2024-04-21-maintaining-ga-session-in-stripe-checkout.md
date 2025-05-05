@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Fixing Google Analytics (GA4) purchase funnel and Stripe Checkout"
-description: "Learn how to maintain GA sessions in Stripe Checkout to fix the purchase journey funnel in Google Analytics 4. This guide covers the issue of 0 purchase events in GA funnel, GA sessions, Stripe Checkout, third party domains, cross-domain measurement, server side event recording, and extra config to make analytics data cleaner."
+description: "A comprehensive guide to fixing broken GA4 purchase funnels when using Stripe Checkout by maintaining cross-domain sessions. Learn how to implement session persistence techniques and configure proper cross-domain measurement for accurate e-commerce tracking."
 date: 2024-04-21 04:00:00 +0800
 categories: code
 image: /assets/images/2024-04-21-maintaining-ga-session-in-stripe-checkout/cover.png
-tags: javascript frontend ga analytics stripe checkout funnel ga4
+tags: google-analytics ga4 stripe-checkout cross-domain-tracking session-persistence e-commerce conversion-funnel third-party-cookies client-id web-analytics referral-traffic
 ---
 
 ![A GA4 purchase journey funnel](/assets/images/2024-04-21-maintaining-ga-session-in-stripe-checkout/cover.png)

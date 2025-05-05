@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Docker + HAProxy = PROXY protocol for Everything"
-description: "Using Docker networking + HAProxy, let any TCP network service support the PROXY protocol"
+description: "A comprehensive guide to implementing PROXY protocol support for any TCP network service using Docker networking and HAProxy. Learn how to maintain source IP information across proxies, create transparent proxies without modifying application code, and configure cross-datacenter traffic routing."
 date: 2017-09-28 00:00:00 +0800
 categories: english
 image: /assets/images/2017-09-28-proxy-protocol-for-everything/1.png
-tags: docker haproxy devop proxy
+tags: docker haproxy devops proxy transparent-proxy network-architecture tcp-services source-ip-preservation container-networking load-balancing
 ---
 
 For cantonese version, please check [here]({% post_url 2017-09-28-proxy-protocol-for-everything %})
