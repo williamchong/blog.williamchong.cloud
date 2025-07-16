@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "How to workaround "Import failed" error in Medium with debugger"
-description: "A technical troubleshooting guide that reveals how to fix Medium's "Import failed" error using browser developer tools. Learn how to analyze script execution, manipulate variables in the debugger, and bypass import failures while preserving publication dates for your stories."
+title: "How to workaround \"Import failed\" error in Medium with debugger"
+description: "A technical troubleshooting guide that reveals how to fix Medium's \"Import failed\" error using browser developer tools. Learn how to analyze script execution, manipulate variables in the debugger, and bypass import failures while preserving publication dates for your stories."
 date: 2023-05-16 00:00:00 +0800
 categories: debug
 image: /assets/images/2023-05-16-workaround-import-failed-in-medium/1.png
 tags: medium javascript debugging browser-developer-tools web-troubleshooting breakpoints variable-inspection network-debugging import-tools backdating content-migration technical-workaround
 ---
+
 ### Hacking the “Import your story” in debugger for proper backdate
 
 Originally [posted in LikeCoin medium publication](https://medium.com/likecoin/how-i-workaround-import-failed-error-in-medium-552eb63b25ec).
@@ -14,6 +15,7 @@ Originally [posted in LikeCoin medium publication](https://medium.com/likecoin/h
 ---
 
 ## tldr: If you just want a Medium Story Backdating tool
+
 If you just want to control the publish date of your story, use my new [Medium Backdating Tool](https://medium-backdate.williamchong.cloud).
 
 ## Import story tool
@@ -90,7 +92,7 @@ Double click on the `postHTML` key, it would become editable. Type in a random t
 
 ---
 
-## Its' working, or not?
+## It's working, or not?
 
 Voila! The error is gone! But what do we actually get as the result?
 
