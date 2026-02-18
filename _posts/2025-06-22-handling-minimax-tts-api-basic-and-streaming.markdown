@@ -10,6 +10,8 @@ tags: minimax text-to-speech tts api-integration server-sent-events sse streamin
 
 ![Minimax TTS API Integration](/assets/images/2025-06-22-handling-minimax-tts-api-basic-and-streaming/cover.png)
 
+> **Update**: This post has a follow-up — [Minimax TTS API Update: let's vibe a TypeScript SDK]({% post_url 2026-02-13-minimax-tts-api-improvements-eventsource-parser-and-sdk %}) — covering `eventsource-parser` for spec-compliant SSE parsing, the new `exclude_aggregated_audio` option, and the [`minimax-speech-ts`](https://github.com/williamchong/minimax-speech-ts) TypeScript SDK.
+
 ## Introduction
 
 Continuing from our series of integrating TTS (Text-to-Speech) API services from [Google](/2023/10/13/convert-google-text-to-speech-to-nodejs-stream/), [Azure](/2023/10/15/convert-azure-text-to-speech-to-nodejs-stream/) and [AWS](/2025/06/06/convert-aws-polly-to-nodejs-stream/), the latest attempt in my TTS exploration is [Minimax](https://minimax.io). Minimax is a relatively new company and unlike previous attempts, it is not a full blown cloud service provider, but rather a specialized API service for AI, video and audio related tasks.
