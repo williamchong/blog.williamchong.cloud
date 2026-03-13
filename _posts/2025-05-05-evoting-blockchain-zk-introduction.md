@@ -3,6 +3,7 @@ layout: post
 title: "E-voting, blockchain and zero-knowledge proof (1): Why are we still using paper to vote? What is an ideal e-voting system?"
 description: "Exploring why paper-based voting still prevails in 2025, the security and privacy challenges of electronic voting systems, and how blockchain and zero-knowledge proof technologies can create an ideal e-voting solution. This first article in the series introduces the limitations of existing systems and future development directions."
 date: 2025-05-05 00:00:00 +0800
+lastmod: 2026-03-13
 categories: technology
 tags: e-voting blockchain zero-knowledge-proof zk-snark cryptography decentralization election-security privacy web3 digital-democracy
 image: /assets/images/2025-05-05-evoting-blockchain-zk-introduction/cover.png

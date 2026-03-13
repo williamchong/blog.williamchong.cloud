@@ -3,6 +3,7 @@ layout: post
 title:  "Convert Google text to speech API result to HTTP streamed response"
 description: "A practical implementation guide for converting Google Cloud Text-to-Speech API buffers into HTTP streamed responses in Node.js. Learn how to implement real-time audio streaming with PassThrough streams for improved user experience when delivering synthesized speech content."
 date:   2023-10-13 10:02:00 +0800
+lastmod: 2025-05-05
 categories: code
 image: /assets/images/2023-10-13-convert-google-text-to-speech-to-nodejs-stream/cover.png
 tags: javascript nodejs google-cloud text-to-speech audio-streaming http-streaming passthrough buffer-streaming real-time-audio api-integration synthesized-speech

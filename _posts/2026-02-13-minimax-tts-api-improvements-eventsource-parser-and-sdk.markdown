@@ -3,6 +3,7 @@ layout: post
 title: "Minimax TTS API Update: let's vibe a TypeScript SDK"
 description: "Follow-up to Minimax TTS streaming integration. How I vibe-coded minimax-speech-ts from API docs to npm package in a day using Claude Code, and the Context-Limit-Progress framework for AI-assisted coding."
 date: 2026-02-13 02:00:00 +0800
+lastmod: 2026-02-13
 categories: code
 image: /assets/images/2026-02-13-minimax-tts-api-improvements-eventsource-parser-and-sdk/cover.png
 tags: minimax text-to-speech tts api-integration server-sent-events sse streaming nodejs typescript sdk eventsource-parser claude-code ai-coding vibe-coding

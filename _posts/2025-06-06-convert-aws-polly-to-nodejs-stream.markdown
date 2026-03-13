@@ -3,6 +3,7 @@ layout: post
 title: "Convert AWS Polly text to speech API result to HTTP streamed response"
 description: "A simple guide on implementing HTTP streaming of AWS Polly text-to-speech output for improved user experience and reduced latency."
 date: 2025-06-06 10:00:00 +0800
+lastmod: 2026-03-13
 categories: code
 image: /assets/images/2025-06-06-convert-aws-polly-to-nodejs-stream/cover.jpg
 tags: javascript nodejs aws polly text-to-speech audio-streaming speech-synthesis

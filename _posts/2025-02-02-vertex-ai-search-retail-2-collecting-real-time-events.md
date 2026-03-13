@@ -3,6 +3,7 @@ layout: post
 title: "Integrating Vertex AI Search for Commerce Part 2: Collecting Realtime Data"
 description: "Learn how to implement real-time user event collection for Google Vertex AI Search for Commerce, with practical solutions to the challenges of the JavaScript Pixel tracking method and a ready-to-use implementation for Nuxt applications."
 date: 2025-02-02 04:00:00 +0800
+lastmod: 2026-03-13
 categories: code
 image: /assets/images/2025-02-02-vertex-ai-search-retail-2-collecting-real-time-events/0.png
 tags: google-cloud vertex-ai retail-search commerce javascript-pixel tracking-implementation nuxt event-collection product-recommendation real-time-data e-commerce

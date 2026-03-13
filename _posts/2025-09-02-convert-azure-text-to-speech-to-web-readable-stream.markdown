@@ -3,6 +3,7 @@ layout: post
 title: "Convert Azure text to speech API result to a web ReadableStream"
 description: "Learn how to convert Azure Text-to-Speech API output into a web-compatible ReadableStream using PullAudioOutputStream for better performance and cross-platform compatibility."
 date: 2025-09-02 02:00:00 +0800
+lastmod: 2026-03-13
 categories: code
 image: /assets/images/2025-09-02-convert-azure-text-to-speech-to-web-readable-stream/cover.png
 tags: javascript nodejs azure text-to-speech audio-streaming web-streams readablestream pull-stream speech-synthesis api-integration

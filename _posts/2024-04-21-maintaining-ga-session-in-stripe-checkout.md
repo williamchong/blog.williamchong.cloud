@@ -3,6 +3,7 @@ layout: post
 title: "Fixing Google Analytics (GA4) purchase funnel and Stripe Checkout"
 description: "A comprehensive guide to fixing broken GA4 purchase funnels when using Stripe Checkout by maintaining cross-domain sessions. Learn how to implement session persistence techniques and configure proper cross-domain measurement for accurate e-commerce tracking."
 date: 2024-04-21 04:00:00 +0800
+lastmod: 2026-03-13
 categories: code
 image: /assets/images/2024-04-21-maintaining-ga-session-in-stripe-checkout/cover.png
 tags: google-analytics ga4 stripe-checkout cross-domain-tracking session-persistence e-commerce conversion-funnel third-party-cookies client-id web-analytics referral-traffic

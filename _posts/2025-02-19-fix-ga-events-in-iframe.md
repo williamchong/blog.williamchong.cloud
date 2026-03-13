@@ -3,6 +3,7 @@ layout: post
 title: "Fix Google Analytics (GA4) Events Not Firing in iFrame"
 description: "A comprehensive troubleshooting guide explaining why Google Analytics (GA4) events fail to trigger in cross-origin iframes, with a proven solution using proper SameSite cookie settings to ensure accurate event tracking."
 date: 2025-02-19 23:00:00 +0800
+lastmod: 2026-03-13
 categories: code
 image: /assets/images/2025-02-19-fix-ga-events-in-iframe/0.png
 tags: google-analytics ga4 cookies samesite cross-origin iframe web-tracking debugging browser-security chrome third-party-cookies web-development

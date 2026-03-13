@@ -3,6 +3,7 @@ layout: post
 title: "魔術！乜叉嘢都支援 PROXY protocol！"
 description: "全面解析如何使用 Docker 網絡同 HAProxy 令任何 TCP 服務支援 PROXY 協議，無需修改應用程式代碼。呢篇指南詳細介紹透明代理嘅實現步驟，點樣保留源 IP 資訊，以及跨數據中心嘅流量轉發技術。"
 date: 2017-09-28 00:00:00 +0800
+lastmod: 2025-05-06
 categories: cantonese
 locale: zh_HK
 image: /assets/images/2017-09-28-proxy-protocol-for-everything/1.png

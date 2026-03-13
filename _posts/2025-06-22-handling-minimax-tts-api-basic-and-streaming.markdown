@@ -3,6 +3,7 @@ layout: post
 title: "Handling Minimax TTS API: Basic HTTP and Streaming"
 description: "Complete guide to integrating Minimax Text-to-Speech API with both blocking and streaming approaches. Learn how to implement basic TTS integration and convert it to real-time streaming for better user experience."
 date: 2025-06-22 02:00:00 +0800
+lastmod: 2026-03-13
 categories: code
 image: /assets/images/2025-06-22-handling-minimax-tts-api-basic-and-streaming/cover.png
 tags: minimax text-to-speech tts api-integration server-sent-events sse streaming real-time audio nodejs javascript
