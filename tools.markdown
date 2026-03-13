@@ -14,3 +14,10 @@ permalink: /tools/
 - [NoSleep](https://nosleep.williamchong.cloud) - A simple tool to prevent your computer from going to sleep
 - [e-ink-sim](https://devpost.com/software/e-ink-sim) - A Chrome extension that simulates e-ink display in your browser
 - [Threads Country Flags](https://chromewebstore.google.com/detail/threads-country-flags/dhajlehnjkhbdheoogoefgacjpkajjoe) - A Chrome extension that adds country flags to Threads profiles based on their location
+
+# Libraries
+
+- [minimax-speech-ts](https://github.com/williamchong/minimax-speech-ts) - TypeScript SDK for the Minimax Speech API, with streaming support and typed error handling
+- [nuxt-gre-pixel-module](https://www.npmjs.com/package/nuxt-gre-pixel-module) - Nuxt 2 module for Google Retail Event pixel tracking
+- [epubcheck-ts](https://github.com/williamchong/epubcheck-ts) - TypeScript wrapper for EPUBCheck validation
+- [epub.ts](https://github.com/williamchong/epub.ts) - TypeScript library for parsing EPUB files
