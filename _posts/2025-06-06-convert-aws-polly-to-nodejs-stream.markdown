@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Convert AWS Polly text to speech API result to HTTP streamed response"
-description: "A simple guide on implementing HTTP streaming of AWS Polly text-to-speech output improved user experience and reduced latency."
+description: "A simple guide on implementing HTTP streaming of AWS Polly text-to-speech output for improved user experience and reduced latency."
 date: 2025-06-06 10:00:00 +0800
 categories: code
 image: /assets/images/2025-06-06-convert-aws-polly-to-nodejs-stream/cover.jpg
@@ -20,7 +20,7 @@ The command we would be using is [SynthesizeSpeechCommand](https://docs.aws.amaz
 
 ## Example code
 
-The following code convert a text input to an ogg audio stream using AWS Polly's `SynthesizeSpeechCommand`.
+The following code converts a text input to an ogg audio stream using AWS Polly's `SynthesizeSpeechCommand`.
 
 ```javascript
 import type {

@@ -106,6 +106,6 @@ With this fix, the `page_view` events were successfully sent from the iframe.
 
 ## Conclusion
 
-While I did knew of the `SameSite` cookie changes, I didn’t expect them to affect simple GA4 `page_view` events from cross-origin iframes that don’t interact with their parent site. It would be helpful if GA4 provided better fallback mechanisms for events when cookies are blocked—or at the very least, documented this behavior more clearly.
+While I knew of the `SameSite` cookie changes, I didn’t expect them to affect simple GA4 `page_view` events from cross-origin iframes that don’t interact with their parent site. It would be helpful if GA4 provided better fallback mechanisms for events when cookies are blocked—or at the very least, documented this behavior more clearly.
 
 This raises an interesting question: are advertising agencies that embed ads in iframes aware of this issue? I’m not sure. Hopefully, this post won’t degrade everyone’s privacy by revealing this workaround, but it might help others struggling with similar problems.

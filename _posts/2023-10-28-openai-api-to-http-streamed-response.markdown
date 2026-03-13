@@ -12,15 +12,17 @@ tags: javascript nodejs openai chatgpt stream http-chunked api-integration trans
 
 Previously, we covered the implementation of HTTP streamed response for [Google's Text-to-Speech API]({% post_url 2023-10-13-convert-google-text-to-speech-to-nodejs-stream %}) and [Azure Text-to-Speech API]({% post_url 2023-10-15-convert-azure-text-to-speech-to-nodejs-stream %}). In this post, we will explore the same technique for another hot topic: calling the [OpenAI API](https://platform.openai.com/) and streaming ChatGPT responses word by word using HTTP streamed (chunked) responses.
 
+> **Note (2026)**: This post references the `gpt-3.5-turbo-16k` model, which has since been deprecated by OpenAI. The streaming techniques described here still apply to current models. Also, the Chrome `ReadableStream` async iterable bug mentioned in the frontend section has been [fixed since Chrome 124](https://chromestatus.com/feature/4585496498118656) (April 2024), so `for await...of` now works directly on `ReadableStream` in modern browsers.
+
 ## Background
 
-Why is a streamed response useful in this case? Waiting for ChatGPT to complete its answer is time-consuming. In fact, requesting the `gpt-3.5-16k` model to translate a piece of an article with approximately 400 tokens often requires more than 30 seconds to receive a complete response. If this is implemented in a web app, users will be staring at a loading screen for more than 30 seconds with nothing else to do.
+Why is a streamed response useful in this case? Waiting for ChatGPT to complete its answer is time-consuming. In fact, requesting the `gpt-3.5-turbo-16k` model to translate a piece of an article with approximately 400 tokens often requires more than 30 seconds to receive a complete response. If this is implemented in a web app, users will be staring at a loading screen for more than 30 seconds with nothing else to do.
 
 Fortunately, ChatGPT (and most other mainstream generative models) generate responses word by word. They predict the most probable word sequence as an answer based on the input text and existing words. To enhance the user experience, it would be better to display this word-by-word generation process live to the user, allowing them to start reading immediately and feel engaged. This is the standard user experience for most AI programs nowadays.
 
 ## Possible Solutions and Why HTTP?
 
-To enable the UI or frontend to show the generative process in real-time, we need to stream the response from the OpenAI API from our backend server to the frontend. OpenAI API and its SDKs [use Server-Sent Events](https://platform.openai.com/docs/api-reference/chat/create) as an approach, while [websockets](https://developer.mozilla.org/docs/Web/API/WebSocke) are another popular technique in this context. However, implementing these techniques requires additional knowledge and libraries.
+To enable the UI or frontend to show the generative process in real-time, we need to stream the response from the OpenAI API from our backend server to the frontend. OpenAI API and its SDKs [use Server-Sent Events](https://platform.openai.com/docs/api-reference/chat/create) as an approach, while [websockets](https://developer.mozilla.org/docs/Web/API/WebSocket) are another popular technique in this context. However, implementing these techniques requires additional knowledge and libraries.
 
 Is there a simpler way? If we can accomplish this task using only HTTP and XHR, without relying on extra knowledge or libraries, it would be ideal. Fortunately, we can achieve this by utilizing HTTP chunked responses as a long-lived streaming connection. If you are familiar with older techniques, you might recognize this as a form of "long-polling."
 
@@ -145,7 +147,7 @@ The result works well, but then I encountered an additional infrastructure-relat
 
 Fortunately, I quickly identified the issue. It turns out our NGINX proxy is [buffering chunked response by default](https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_buffering). Simply adding `proxy_buffering off;` fixed the issue. It's also good to know that neither Cloudflare nor the Google Cloud load balancer does this by default. Otherwise, I would have had a major headache.
 
-Another issue arose when we had to [adjust the timeout for our Google Cloud HTTP load balancer]((https://cloud.google.com/load-balancing/docs/https#websocket_support)) running as our Kubernetes ingress, from 60 seconds to 1800 seconds. This timeout affects all HTTP connections in the cluster, regardless of whether they are HTTP chunked responses, server-sent events, or websockets.
+Another issue arose when we had to [adjust the timeout for our Google Cloud HTTP load balancer](https://cloud.google.com/load-balancing/docs/https#websocket_support) running as our Kubernetes ingress, from 60 seconds to 1800 seconds. This timeout affects all HTTP connections in the cluster, regardless of whether they are HTTP chunked responses, server-sent events, or websockets.
 
 ## Done (Real)
 

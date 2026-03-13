@@ -5,7 +5,7 @@ description: "Learn how to convert Azure Text-to-Speech API output into a web-co
 date: 2025-09-02 02:00:00 +0800
 categories: code
 image: /assets/images/2025-09-02-convert-azure-text-to-speech-to-web-readable-stream/cover.png
-tags:
+tags: javascript nodejs azure text-to-speech audio-streaming web-streams readablestream pull-stream speech-synthesis api-integration
 ---
 
 ![Azure text to speech API](/assets/images/2025-09-02-convert-azure-text-to-speech-to-web-readable-stream/cover.png)

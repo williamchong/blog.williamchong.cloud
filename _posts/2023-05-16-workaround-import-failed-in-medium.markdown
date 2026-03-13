@@ -46,7 +46,7 @@ As a developer, I am too lazy to host a page and manually set the dates for each
 
 First thing one would look at would be the console, any JavaScript or API call errors should be shown here. However as seen in the image, only some boring message about CSP is shown, so no luck in the console.
 
-Second thing to look for would be in the Network tab. Since Medium uses a third part service for parsing and importing external website, one would expect some external API is called. We can filter the network request to “Fetch/XHR” to only show API calls, and see if anything interesting shows up. However, there is no failed HTTP requests. Most of the request are analytics events. By inspecting the payload and response one by one though, a particular API call seems interesting.
+Second thing to look for would be in the Network tab. Since Medium uses a third party service for parsing and importing external website, one would expect some external API is called. We can filter the network request to “Fetch/XHR” to only show API calls, and see if anything interesting shows up. However, there is no failed HTTP requests. Most of the request are analytics events. By inspecting the payload and response one by one though, a particular API call seems interesting.
 
 ---
 
@@ -66,11 +66,11 @@ It is a obfuscated JavaScript file, as expected in most modern web application. 
 
 ![The interesting lines](/assets/images/2023-05-16-workaround-import-failed-in-medium/6.png)
 
-Finally something promising show up. We see words like “`postHTML`”, also a “`errorCode`” that is set to 400, which probably hints it is a HTTP error code. Going a few more lines below allow us to see how Medium show different error messages for some error codes it encounters.
+Finally something promising show up. We see words like “`postHTML`”, also a “`errorCode`” that is set to 400, which probably hints it is a HTTP error code. Going a few more lines below allows us to see how Medium show different error messages for some error codes it encounters.
 
 ![Error cases](/assets/images/2023-05-16-workaround-import-failed-in-medium/7.png)
 
-As we can see above, there are three kinds of import error. One for 400/404 error, one for 403/500/504 error, and one that catches all error. We can assume `errCode` is the HTTP error code encountered by the importer when crawling the target URL. Unfortunately, the error message we see in our import error page is the catch-all case. To understand the actual `errCode` for our case, we would want to know about the stat of `a.Ph` variable during our import. To achieve this, we can set a breakpoint on `QRa` .
+As we can see above, there are three kinds of import error. One for 400/404 error, one for 403/500/504 error, and one that catches all error. We can assume `errCode` is the HTTP error code encountered by the importer when crawling the target URL. Unfortunately, the error message we see in our import error page is the catch-all case. To understand the actual `errCode` for our case, we would want to know about the state of the `a.Ph` variable during our import. To achieve this, we can set a breakpoint on `QRa` .
 
 ![State of the program when it is paused](/assets/images/2023-05-16-workaround-import-failed-in-medium/8.png)
 
@@ -78,7 +78,7 @@ After setting a breakpoint, retry the import flow by refreshing the browser. The
 
 ![Content of a.Ph variable](/assets/images/2023-05-16-workaround-import-failed-in-medium/9.png)
 
-Unfortunately we can see the `errorCode` is 0, which means we don’t know why the import fail. However a very interesting observation is that all the fields except `postHTML` is properly filled. As we can see in the source, having `a.Ph.postHTML` empty would throw us into an error case. What if we actually fill in some random text for `postHTML` here? Actually we can do that!
+Unfortunately we can see the `errorCode` is 0, which means we don’t know why the import fails. However a very interesting observation is that all the fields except `postHTML` is properly filled. As we can see in the source, having `a.Ph.postHTML` empty would throw us into an error case. What if we actually fill in some random text for `postHTML` here? Actually we can do that!
 
 ---
 

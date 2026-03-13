@@ -12,9 +12,9 @@ tags: google-cloud vertex-ai retail-search product-recommendation bigquery ga4 e
 
 ## Background
 
-In one of our e-commerce project, a very useful feature we always wanted to have personalized item recommendations for users. Since we don't have a dedicated data scientist, we don't have the resource to home-bake our own model, and was looking for a suitable managed cloud service for this.
+In one of our e-commerce projects, a very useful feature we always wanted was personalized item recommendations for users. Since we don't have a dedicated data scientist, we don't have the resources to home-bake our own model, and were looking for a suitable managed cloud service for this.
 
-We looked into [Amazon Personalize](https://aws.amazon.com/personalize/), which seems easy and promising, but unfortunately, we didn't have time to set up a new data pipeline just for it, and couldn't even try the setting up models.
+We looked into [Amazon Personalize](https://aws.amazon.com/personalize/), which seems easy and promising, but unfortunately, we didn't have time to set up a new data pipeline just for it, and couldn't even try setting up models.
 
 Recently, I came across Google Cloud's [Vertex AI Search for Commerce](https://cloud.google.com/solutions/retail-product-discovery), which seems to have seamless integration with [Google Merchant Center](https://www.google.com/retail/) and [Google Analytics](https://marketingplatform.google.com/about/analytics/)(GA4). This lowers integration costs, so I decided to give it a try. Turns out, it is not that easy.
 
@@ -30,7 +30,7 @@ There are a few ways to import product catalogs into Vertex AI Search. Here, we 
 
 If you already have Google Merchant Center set up either for shopping ads or Google Ads, you can easily [import the product catalog from there](https://cloud.google.com/retail/docs/upload-catalog#mc). This is the easiest way to import a product catalog, especially when you have [product structured data](https://developers.google.com/search/docs/appearance/structured-data/product) already set up in your e-commerce site. Google Merchant Center will fetch all the products automatically from your website without any additional import procedure.
 
-Sadly, the last time I used Google Merchant Center, all my products were disapproved since they were considered as [unsupported shopping content](https://support.google.com/merchants/answer/6150006). After a while, they were completely removed from the product list even when I don't want shopping ad, and wouldn't reappear somehow. So, I can't use this method.
+Sadly, the last time I used Google Merchant Center, all my products were disapproved since they were considered as [unsupported shopping content](https://support.google.com/merchants/answer/6150006). After a while, they were completely removed from the product list even when I don't want shopping ad, and wouldn't reappear. So, I can't use this method.
 
 ### Importing Product Catalog via API
 
@@ -41,13 +41,13 @@ As a developer, [importing via API](https://cloud.google.com/retail/docs/upload-
       "inputConfig": {
         "productInlineSource": {
           "products": [
-            %{your products}
+            ${your products}
           ],
         }
       }
     }, {
       headers: {
-        'Authorization ': `Bearer $(gcloud auth print-access-token)`,
+        'Authorization': `Bearer $(gcloud auth print-access-token)`,
       },
     });
 ```
@@ -83,7 +83,7 @@ Then you need to add the following header to your request:
 
 ## Importing User Events
 
-Like the product catalog, there are a few ways to [import user events](https://cloud.google.com/retail/docs/import-user-events) into Vertex AI Search. We will only cover Google Analytics(GA4) data import here since it requires the least effort for sites already set up with GA4
+Like the product catalog, there are a few ways to [import user events](https://cloud.google.com/retail/docs/import-user-events) into Vertex AI Search. We will only cover Google Analytics(GA4) data import here since it requires the least effort for sites already set up with GA4.
 
 ### Importing GA4 Data from BigQuery
 
@@ -125,8 +125,7 @@ SELECT
   user_pseudo_id as visitorId,
   user_id as userId,
   CAST(FORMAT_TIMESTAMP("%Y-%m-%dT%H:%M:%SZ",timestamp_seconds(CAST ((event_timestamp/1000000) as int64))) as STRING) AS eventTime
-FROM `analytics_123456789.CREATE TABLE `analytics_123456789.combined_events` AS
-` where event_name = 'page_view' AND `event_params`[SAFE_OFFSET(0)].`key` = 'page_path' and (`event_params`[SAFE_OFFSET(0)].`value`.`string_value` = '/zh-Hant' or `event_params`[SAFE_OFFSET(0)].`value`.`string_value` = '/en')
+FROM `analytics_123456789.combined_events` where event_name = 'page_view' AND `event_params`[SAFE_OFFSET(0)].`key` = 'page_path' and (`event_params`[SAFE_OFFSET(0)].`value`.`string_value` = '/zh-Hant' or `event_params`[SAFE_OFFSET(0)].`value`.`string_value` = '/en')
 ```
 
 ## Import ordering of event and product catalog matters!
@@ -143,7 +142,7 @@ curl -X POST \
     --data "{
      'userEventRejoinScope': 'UNJOINED_EVENTS'
      }" \
-    "https://retail.googleapis.com/v2/projects/${your-project-nubmer}/locations/global/catalogs/default_catalog/userEvents:rejoin"
+    "https://retail.googleapis.com/v2/projects/${your-project-number}/locations/global/catalogs/default_catalog/userEvents:rejoin"
 
 ```
 

@@ -59,7 +59,7 @@ To design a practical e-voting system that would gain widespread acceptance, let
 
   - Number of eligible voters
   - The start, end, and duration of the voting period
-  - The number of votes casted
+  - The number of votes cast
   - The number of votes deemed invalid, if any
   - The tallying results
 
@@ -69,7 +69,7 @@ To design a practical e-voting system that would gain widespread acceptance, let
   The system should allow voters to verify the following information. Whether this information can also be verified by third parties depends on design and implementation constraints:
 
   - If one is eligible to vote
-  - If one's vote is casted
+  - If one's vote is cast
   - If one's vote is counted
 
   This ensures that voters can confirm their votes are included in the tally.

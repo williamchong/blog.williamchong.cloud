@@ -55,7 +55,7 @@ Here we're calling the [`speech-02-hd` model](https://www.minimax.io/news/minima
 
 ### Streaming the Non-streaming API
 
-Even if the non-streaming API is not designed for streaming, we can still convert the complete received response into a stream. This allow user to start playing the audio as soon as our API start sending the response, rather than waiting for the entire audio to be downloaded in browser.
+Even if the non-streaming API is not designed for streaming, we can still convert the complete received response into a stream. This allows the user to start playing the audio as soon as our API start sending the response, rather than waiting for the entire audio to be downloaded in browser.
 
 ```javascript
 // continue from the previous code snippet
@@ -86,7 +86,7 @@ According to the [Minimax documentation](https://www.minimax.io/platform/documen
         "status_msg":""
     }
 }
-// thrid chunk
+// third chunk
 {
     "data":{
         "audio":"hex audio_chunk3",

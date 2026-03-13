@@ -36,7 +36,7 @@ Unfortunately, we do not have GTM set up on our website due to complications wit
 
 If you are familiar with implementing server-side events (like in [Meta's Conversions API](https://developers.facebook.com/docs/marketing-api/conversions-api/)), you can manually build your JSON payload and use the [`userEvents.write` API to send events](https://cloud.google.com/retail/docs/record-events#write) to the Vertex AI Search service. This ensures that events are sent even if the user has ad blockers or has disabled JavaScript, provided you have the appropriate server-side API related to the event.
 
-Additionally, if you are already using Google Analytics 4 (GA4), you can use a `prebuilt_rule` called `ga4_bq` to send a GA4 event payload directly to the `userEvents.write` API. While this is mentioned in the documentation, I'm unsure in what scenarios this would be applicable since you cannot directly retrieve a GA4 event payload from `gtm.js`. Please inspire me if you have ideas!
+Additionally, if you are already using Google Analytics 4 (GA4), you can use a `prebuilt_rule` called `ga4_bq` to send a GA4 event payload directly to the `userEvents.write` API. While this is mentioned in the documentation, I'm unsure in what scenarios this would be applicable since you cannot directly retrieve a GA4 event payload from `gtm.js`. Please let me know if you have ideas!
 
 ### JavaScript Pixel Tracking
 

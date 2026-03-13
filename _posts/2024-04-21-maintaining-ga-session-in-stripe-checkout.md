@@ -87,6 +87,8 @@ The server-side event recording solution is mentioned in the Stripe official doc
 
 While this solution can help in correctly logging a purchase event, it's important to note that the session ID is not explicitly mentioned in the official guide. Therefore, it's unclear whether this approach will work seamlessly with the purchase journey funnel.
 
+> **Note (2026)**: The code example below uses the Universal Analytics Measurement Protocol (`v: "1"`, `google-analytics.com/batch`), which was **sunset in July 2024** and no longer works. If you are implementing this today, use the [GA4 Measurement Protocol](https://developers.google.com/analytics/devguides/collection/protocol/ga4) instead.
+
 {% highlight javascript %}
  if (event.type === "checkout.session.completed") {
     // Record metrics using the Google Analytics Measurement Protocol
