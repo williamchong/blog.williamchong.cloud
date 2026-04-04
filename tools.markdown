@@ -11,6 +11,7 @@ permalink: /tools/
 - [Bech32 Wallet Address Converter](https://bech32.williamchong.cloud) - Convert cryptocurrency wallet addresses in Bech32 format
 - [Should I take (Hong Kong) Taxi?](https://shoulditake.taxi) - A tool to calculate Hong Kong taxi fare using open data, because Google Map somehow removed that feature
 - [Medium Backdating Tool](https://medium-backdate.williamchong.cloud) - Generate URLs that allow easy backdating of Medium stories
+- [NIKKE Arena Planner](https://nikke.williamchong.cloud) - PVP team recommender for NIKKE: Goddess of Victory — select your roster, get optimized 5v5 and 15v15 teams with burst timing analysis
 - [NoSleep](https://nosleep.williamchong.cloud) - A simple tool to prevent your computer from going to sleep
 - [e-ink-sim](https://devpost.com/software/e-ink-sim) - A Chrome extension that simulates e-ink display in your browser
 - [Threads Country Flags](https://chromewebstore.google.com/detail/threads-country-flags/dhajlehnjkhbdheoogoefgacjpkajjoe) - A Chrome extension that adds country flags to Threads profiles based on their location
